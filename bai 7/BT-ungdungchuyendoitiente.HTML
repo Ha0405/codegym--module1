@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <label for="">Amount</label><br>
+        <input type="number" id="VND"><br>
+        <label for="">Form Currency</label><br>
+        <select name="" id="h1"><br>
+            <option value="Việt Nam">Việt Nam </option>
+            <option value="Hàn Quốc">Hàn Quốc</option>
+        </select><br>
+    
+        <label for="">To Currency</label><br>
+        <select name="" id="h2"><br>
+            <option value="USD">USD</option>
+            <option value="WON">WON</option>
+        </select>
+        <button type="button" onclick="USD()"> Convert</button>
+    <h4 id ="ketqua"></h4>
+    </form>
+    <script>
+        function USD(){
+            const GIATRI=23000
+
+            var VND = document.getElementById("VND").value;
+            
+            var USD = VND*GIATRI
+
+            document.getElementById("ketqua").innerHTML=USD
+        }
+       
+    </script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Caculator</h1>
+    <form action="#">
+       <input type="number"id="giatri1">
+       <input type="number"id="giatri2"><br>
+       <input type="button" onclick="tong()" value="Addition(+)">
+       <input type="button" onclick="hieu()" value="Subtraction(-)">
+       <input type="button" onclick="tich()" value="Multiplication(x)">
+       <input type="button"onclick="thuong()" value="Duvision(/)">
+       
+    </form>
+    <p>kết quả là: <span id="ketqua"></span></p>
+    <script>
+       function tong(){
+            var so1 = +document.getElementById("giatri1").value
+            var so2 = +document.getElementById("giatri2").value
+            var total = so1 + so2
+           document.getElementById("ketqua").innerHTML = total
+            console.log("")
+        }
+        function hieu(){
+            var so1 = document.getElementById("giatri1").value
+            var so2 = document.getElementById("giatri2").value
+            var sotru = so1 - so2
+           document.getElementById("ketqua").innerHTML = sotru
+            console.log("")
+        }
+        function tich(){
+            var so1 = document.getElementById("giatri1").value
+            var so2 = document.getElementById("giatri2").value
+            var sonhan = so1 * so2
+           document.getElementById("ketqua").innerHTML = sonhan
+            console.log("")
+        }
+        function thuong(){
+            var so1 = document.getElementById("giatri1").value
+            var so2 = document.getElementById("giatri2").value
+            var sochia = so1 / so2
+           document.getElementById("ketqua").innerHTML = sochia
+            console.log("")
+        }
+
+
+    </script>
+    
+
+</body>
+</html>
