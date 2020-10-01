@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="sonam"><button onclick="KIEMTRA()">KIỂM TRA</button>
+    <P>Kết quả: <span id=ketqua></span></P>
+    <script>
+         function kiemTra(){
+        var nam = document.getElementById("sonam").value
+        if ( nam %100==0 && nam  %400==0) 
+            document.getElementById("ketqua").innerHTML="Không Năm nhuận"
+      
+        
+            else document.getElementById("ketqua").innerHTML="Không nhuận"
+            
+        }
+    </script>
+</body>
+</html>
