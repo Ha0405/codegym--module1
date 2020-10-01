@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Chiều cao<br>
+    <input type="number"id="Chieucao"><br>
+    Cân nặng<br>
+    <input type="number"id="Cannang">
+
+   <button onclick="BMI()">Kiểm tra</button>
+    <p>Kết quả: <span id="ketqua"></span></p> 
+<script>
+    function BMI(){
+        var cannang = document.getElementById("Cannang").value
+        var chieucao = document.getElementById("Chieucao").value
+        var chiso = cannang/(chieucao*chieucao)
+        if(chiso<18)
+            document.getElementById("ketqua").innerHTML=chiso+"<br>"+"Bạn quá gầy"
+         else if(chiso<25.0)
+            document.getElementById("ketqua").innerHTML=chiso+"<br>"+"Bình thường"
+         else if(chiso<30.0)
+            document.getElementById("ketqua").innerHTML=chiso+"<br>"+"Béo"
+            else
+            document.getElementById("ketqua").innerHTML="<br>"+"Bạn quá béo"
+        
+    }
+</script>
+</body>
+</html>
